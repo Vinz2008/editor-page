@@ -69,7 +69,7 @@ async function runitPython(){
 
 function runitMarkdown() {
     var myCode = editor.getSession().getValue();
-document.getElementById('output').innerHTML = marked.parse(myCode);
+    document.getElementById('output').innerHTML = marked.parse(myCode);
 }
 var buttonTheme = document.getElementById('btn-toggle')
 setThemeAce()
