@@ -24,7 +24,8 @@ function run(code) {
     code = code.replace(reg1,"'")
     console.log("input after regex: " + code)
     const params = {
-        code: code, 
+        code: code,
+        language: "python" 
     };
     const options = {
         method: 'POST',

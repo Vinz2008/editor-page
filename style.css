@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono");
 :root {
     --text-color: #000000;
     --bkg-color: #fff;
-    --nav-color: #fff;
-    --backgroundTop-color: #4C3AD8;
+    --nav-color: #16161a;
+    --backgroundTop-color: #16161a;
     --top-text-color: #fff;
     --parameter-border: #50FA7B;
     --output-border: #000000;
-  }
-  body.dark-theme {
+    --button1 : #8BE9FD;
+    --button2: #48D06D;
+}
+
+body.dark-theme {
     --text-color: #BD93F9;
     --bkg-color: #383A59;
     --nav-color: #282A36;
-  }
+}
 
 #mycode { 
     position: absolute;
@@ -59,6 +63,7 @@ body {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
+    font-family: IBM Plex Mono;
 }
 h1 {
     color: var(--top-text-color);
@@ -72,7 +77,7 @@ pre {
 button {
     font-size: 16px;
     border: none;
-    background-color: #8BE9FD;
+    background-color: var(--button1);
     color: white;
     padding: 9px 20px;
     text-align: center;
@@ -80,6 +85,7 @@ button {
     display: inline-block;
     border-radius: 40px;
     cursor:pointer;
+    font-family: IBM Plex Mono;
   }
 
 .button-screen-div {
@@ -91,21 +97,13 @@ button {
     color: black;
 }
 .button-screen {
-    background-color: #48D06D;
+    background-color: var(--button2);
     size: 30em;
 }
 
 iframe {
     width: 95em;
     height: 35em;
-}
-
-#scratch-button {
-    font-size: 15px;
-    padding: 7px 18px;
-}
-#scratch-h3 {
-    font-size: 15px;
 }
 
 #parameters_div {
@@ -157,7 +155,6 @@ nav {
     margin-left: 7px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
 }
 
 #account_link {

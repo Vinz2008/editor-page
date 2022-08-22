@@ -44,6 +44,8 @@ function setThemeAce() {
     if (theme == "light") {
         editor.setTheme("ace/theme/github");
     } else if (theme == "dark") {
+        editor.setTheme("ace/theme/twilight");
+    } else if (theme == "dracula"){
         editor.setTheme("ace/theme/dracula");
     }
 }
