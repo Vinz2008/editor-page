@@ -285,6 +285,34 @@ canvas {
     
 }
 
+@media screen and (max-width: 900px) {
+    #homepage-img {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ads-img {
+        display: none;
+    }
+    .text-homepage-titles {
+        text-align: center;
+    }
+    #text-next-img {
+        text-align: center;
+    }
+    #button-next-img {
+        margin: 0 auto;
+    }
+    .button-screen {
+        margin: 0 auto;
+    }
+
+    #no-ads-text {
+        margin-top: 1rem;
+    }
+}
+
 
 @keyframes no-ads {
     0% {
@@ -334,4 +362,17 @@ canvas {
     flex-direction: column;
     align-items: center;
 
+}
+
+#function-bar {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+#file_div {
+    position: absolute;
+    z-index:1000;
+    visibility: hidden; 
+    display:inline;
+    border-radius: 20px;
 }
